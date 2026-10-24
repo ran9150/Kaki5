@@ -1,0 +1,81 @@
+:root {
+  --bg-main: #0B0E14;
+  --bg-panel: #151A23;
+  --bg-card: #1E2532;
+  --bg-hover: #2A3446;
+  --border-color: #2D3748;
+  
+  --accent-primary: #6366F1;
+  --accent-success: #10B981;
+  --accent-warning: #F59E0B;
+  --accent-danger: #EF4444;
+  --accent-brilliant: #06B6D4;
+
+  --text-main: #F3F4F6;
+  --text-muted: #9CA3AF;
+  --text-dim: #6B7280;
+
+  --sq-light-neo: #E2E8F0;
+  --sq-dark-neo: #475569;
+
+  --sq-light-wood: #F0D9B5;
+  --sq-dark-wood: #B58863;
+
+  --sq-light-cyber: #1E293B;
+  --sq-dark-cyber: #0F172A;
+
+  --sq-light-emerald: #E0E7FF;
+  --sq-dark-emerald: #3730A3;
+
+  --sq-light-gold: #FEF3C7;
+  --sq-dark-gold: #92400E;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+code, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+.square-light-neo { background-color: var(--sq-light-neo); color: #475569; }
+.square-dark-neo { background-color: var(--sq-dark-neo); color: #cbd5e1; }
+
+.square-light-wood { background-color: var(--sq-light-wood); color: #b58863; }
+.square-dark-wood { background-color: var(--sq-dark-wood); color: #f0d9b5; }
+
+.square-light-cyber { background-color: #334155; color: #94a3b8; border: 1px solid #475569; }
+.square-dark-cyber { background-color: #0f172a; color: #38bdf8; border: 1px solid #1e293b; }
+
+.square-light-emerald { background-color: #e0e7ff; color: #3730a3; }
+.square-dark-emerald { background-color: #4338ca; color: #c7d2fe; }
+
+.square-light-gold { background-color: #fef3c7;
